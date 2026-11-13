@@ -9,7 +9,7 @@ table{border-collapse:collapse;width:100%;font-size:14px}th,td{border:1px solid 
 a{color:#8a5a12}
 </style></head><body>
 <h1>Gizlilik Politikası</h1>
-<p><strong>Son güncelleme:</strong> 29.09.2026</p>
+<p><strong>Son güncelleme:</strong> 12.11.2026</p>
 <p>Bu Gizlilik Politikası, Ezan ("Uygulama") tarafından işlenen kişisel verileri, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") kapsamında aydınlatma yükümlülüğümüz çerçevesinde açıklar.</p>
 <h2>1. Veri Sorumlusu</h2>
 <p><strong>Veri Sorumlusu:</strong> MUHAMMED SAID CESUR<br>
@@ -36,6 +36,11 @@ a{color:#8a5a12}
 <td>Vakit tablosu ve widget içeriği</td>
 </tr>
 <tr>
+<td>Anlık tam konum ("Yakındaki camiler" ekranı açıkken)</td>
+<td>Yalnızca bellekte; kaydedilmez</td>
+<td>Gömülü cami listesinde size yakın olanları bulmak</td>
+</tr>
+<tr>
 <td>Kaza defteri (kılınmamış namaz kaydı)</td>
 <td>Yalnızca cihazda, <strong>şifreli</strong> (iOS Keychain / Android Keystore tabanlı şifreli depolama)</td>
 <td>Kullanıcının kendi takibi</td>
@@ -46,6 +51,11 @@ a{color:#8a5a12}
 <td>Bildirim planlama</td>
 </tr>
 <tr>
+<td>Yedek metni (kaza defteri, ayarlar, kayıtlı zikirler, hatim ve oruç işaretleri)</td>
+<td>Yalnızca siz "Yedeği kopyala"ya bastığınızda telefonun panosuna; nereye yapıştırılıp saklanacağına siz karar verirsiniz</td>
+<td>Telefon değiştirirken taşıma. Uygulama bu metni hiçbir yere göndermez</td>
+</tr>
+<tr>
 <td>Son çökme kaydı (hata mesajı ve tek satır teknik ayrıntı)</td>
 <td>Yalnızca cihazda</td>
 <td>Uygulama çökerse Sağlık ekranında göstermek; hiçbir sunucuya gönderilmez, üçüncü taraf çökme raporlama SDK'sı (Crashlytics vb.) kullanılmaz</td>
@@ -53,7 +63,11 @@ a{color:#8a5a12}
 </tbody>
 </table>
 <p>Konum verisi <strong>hiçbir zaman</strong> ham GPS koordinatı olarak sunucuya gönderilmez; iki ondalık basamağa yuvarlanmış hâli dahi yalnız cihazda tutulur ve yalnızca vakit/kıble hesaplaması için kullanılır.</p>
-<p><strong>Kendi sunucumuz hiçbir kullanıcı verisi almaz.</strong> Vakit tabloları uygulamanın içinde gelir, bildirimler telefonunuzda yerel olarak kurulur; uygulamanın bize ait bir sunucuya yaptığı istek yoktur.</p>
+<p><strong>Kendi sunucumuz hiçbir kullanıcı verisi almaz.</strong> Vakit tabloları, günün ayeti/hadisi/duası ve cami listesi uygulamanın içinde gelir; bildirimler telefonunuzda yerel olarak kurulur; uygulamanın bize ait bir sunucuya yaptığı istek yoktur.</p>
+<p><strong>Gömülü içerik ve kaynakları:</strong> Namaz vakitleri ile günün ayeti, hadisi ve duası T.C. Diyanet İşleri Başkanlığı kaynaklıdır. Cami konumları OpenStreetMap'ten alınmıştır (© OpenStreetMap katkıda bulunanlar, ODbL). Bu veriler uygulamayla birlikte gelir; gösterilirken internete bağlanılmaz. ODbL gereği, uygulamadaki cami listesi de aynı lisansla <a href="veri/camiler.json">veri/camiler.json</a> adresinde herkese açıktır (<a href="veri/README.md">açıklama</a>).</p>
+<p><strong>Harita:</strong> "Yakındaki camiler" listesinde bir camiye dokunursanız, o caminin konumu telefonunuzdaki harita uygulamasına (ör. Google Haritalar, Apple Haritalar) aktarılır. Bu yalnız sizin dokunmanızla olur; o andan sonrası ilgili harita uygulamasının gizlilik politikasına tabidir. Sizin konumunuz bu aktarıma eklenmez.</p>
+<p><strong>Camide sessiz (yalnız Android):</strong> "Camideyim" düğmesine bastığınızda ya da Ayarlar'da seçtiğiniz vakitlerde uygulama telefonun zilini titreşime alır, süre bitince geri açar; bunun için ek izin istenmez, hangi vakitte sessize alındığı hiçbir yere gönderilmez, cihazda yalnız bitiş saati tutulur.</p>
+<p><strong>Mağazada değerlendirin:</strong> Bu satır ve yorum kartındaki "Hadi yapalım" düğmesi telefonunuzdaki mağaza uygulamasını (Google Play ya da App Store) Ezan'ın sayfasında açar; uygulama mağazaya sizinle ilgili bilgi göndermez, kartın ne zaman gösterileceğini belirleyen sayaç yalnız cihazda tutulur ve yedeğe girmez.</p>
 <h2>3. Hangi Verileri TOPLAMIYORUZ</h2>
 <ul>
 <li><strong>Hesap oluşturmuyoruz.</strong> Uygulama e-posta, telefon veya şifre istemez.</li>
@@ -105,7 +119,7 @@ a{color:#8a5a12}
 <h2>7. Başvuru ve İletişim</h2>
 <p>Yukarıdaki haklarınızı kullanmak veya sorularınız için: <strong>saidcesur@yahoo.com</strong> adresinden bize ulaşabilirsiniz.</p>
 <h2>8. Nasıl doğrularsınız</h2>
-<p>Bu iddiaları bize güvenmeden sınayabilirsiniz: telefonun ağ trafiğini izleyen bir araçla (ör. PCAPdroid) uygulamayı kullanın; uygulamanın kendi kodunun hiçbir sunucuya bağlanmadığını görürsünüz. Tek istisna Google Play'in kendi ödeme kütüphanesidir (Ezan Pro satın alma ve kütüphanenin Google'a ilettiği kendi teknik kayıtları); bu trafik Google Play'e gider, bize ulaşmaz; uygulama bu kütüphaneye ibadet, konum veya kullanım verisi vermez ve trafiğin işlenmesi Google'ın gizlilik politikasına tabidir. Uygulamanın izin listesini Android Ayarlar → Uygulamalar → İzinler bölümünden kontrol edebilirsiniz: yalnız bildirim, alarm ve (kıble için, isteğe bağlı) yaklaşık konum.</p>
+<p>Bu iddiaları bize güvenmeden sınayabilirsiniz: telefonun ağ trafiğini izleyen bir araçla (ör. PCAPdroid) uygulamayı kullanın; uygulamanın kendi kodunun hiçbir sunucuya bağlanmadığını görürsünüz. Tek istisna Google Play'in kendi ödeme kütüphanesidir (Ezan Pro satın alma ve kütüphanenin Google'a ilettiği kendi teknik kayıtları); bu trafik Google Play'e gider, bize ulaşmaz; uygulama bu kütüphaneye ibadet, konum veya kullanım verisi vermez ve trafiğin işlenmesi Google'ın gizlilik politikasına tabidir. Uygulamanın izin listesini Android Ayarlar → Uygulamalar → İzinler bölümünden kontrol edebilirsiniz: yalnız bildirim, alarm, titreşim ve (isteğe bağlı) konum. Konum kıble ve bulunduğunuz ilçenin vakitleri için yaklaşık, "Yakındaki camiler" için tam olarak kullanılır; Android 12 ve sonrasında "yaklaşık konum"u seçebilirsiniz.</p>
 <h2>9. Değişiklikler</h2>
 <p>Bu politika güncellendiğinde bu sayfadaki "Son güncelleme" tarihi değişir; önemli değişikliklerde uygulama içinde bilgilendirme yapılır.</p>
 </body></html>
